@@ -33,5 +33,22 @@ def test_float_num(question):
 
 
 # Main routine
-width = test_float_num("please enter youw width")
-print(f'you enterd {width}') 
+print("Welcome to my conversion calculator.")
+width = test_float_num("Please enter your width (in meters):")
+print(f'You entered {width}m') 
+
+length = test_float_num("\nPlease enter your length(in meters):")
+print(f"You entered {length}m")
+
+cost = test_float_num("\nPlease enter cost per meter") 
+print(f'The cost per meter value you entered is ${cost}')
+
+perimeter = 2 * (width + length) 
+fencecost = perimeter *cost
+
+print(f"The perimeter of your fence is {perimeter}m")
+print(f"The cost to build your fence will be ${fencecost}")
+
+keep_going = input("Press enter to complete another calculation, any other key to end the program")
+
+print("Thank you for using my conversion calculator hope it helped :)")
